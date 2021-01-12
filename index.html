@@ -1,0 +1,152 @@
+<style  type="text/css">
+li{
+	float: left;
+	padding: 5;
+	 border: solid 1px #000;
+	 background-color: #009846;
+	 list-style: none outside none;
+}
+ul{
+	display: table;
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	display:block;
+	width:60px;
+	height:60px;
+	-moz-border-radius: 45px;
+	-webkit-border-radius: 45px;
+}
+
+#todo{
+margin-top: 50;	
+margin-left: 500;
+}
+
+.negra{background-color: #000;}
+.blanca{background-color: #fff;}
+.turno{background-color: #009846;width:60px;height:60px; padding: 5;}
+.showpro .juego_li{background-color: #FFE900}
+#calculando{display:none;}
+</style>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js" ></script>
+<script type="text/javascript" src="index.js" ></script>
+<script type="text/javascript" src="ia.js" ></script>
+<div id="todo">
+<div class="over showpro">
+
+	<ul>
+		<li><a id="casilla_0"> </a></li>
+		<li><a id="casilla_1"> </a></li>
+		<li><a id="casilla_2"> </a></li>
+		<li><a id="casilla_3"> </a></li>
+		<li><a id="casilla_4"> </a></li>
+		<li><a id="casilla_5"> </a></li>
+		<li><a id="casilla_6"> </a></li>
+		<li><a id="casilla_7"> </a></li>
+	</ul>
+
+	<ul>
+		<li><a id="casilla_8"> </a></li>
+		<li><a id="casilla_9"> </a></li>
+		<li><a id="casilla_10"> </a></li>
+		<li><a id="casilla_11"> </a></li>
+		<li><a id="casilla_12"> </a></li>
+		<li><a id="casilla_13"> </a></li>
+		<li><a id="casilla_14"> </a></li>
+		<li><a id="casilla_15"> </a></li>
+	</ul>
+
+	<ul>
+		<li><a id="casilla_16"> </a></li>
+		<li><a id="casilla_17"> </a></li>
+		<li><a id="casilla_18"> </a></li>
+		<li><a id="casilla_19"> </a></li>
+		<li><a id="casilla_20"> </a></li>
+		<li><a id="casilla_21"> </a></li>
+		<li><a id="casilla_22"> </a></li>
+		<li><a id="casilla_23"> </a></li>
+	</ul>
+
+	<ul>
+		<li><a id="casilla_24"> </a></li>
+		<li><a id="casilla_25"> </a></li>
+		<li><a id="casilla_26"> </a></li>
+		<li><a id="casilla_27"> </a></li>
+		<li><a id="casilla_28"> </a></li>
+		<li><a id="casilla_29"> </a></li>
+		<li><a id="casilla_30"> </a></li>
+		<li><a id="casilla_31"> </a></li>
+	</ul>
+
+	<ul>
+		<li><a id="casilla_32"> </a></li>
+		<li><a id="casilla_33"> </a></li>
+		<li><a id="casilla_34"> </a></li>
+		<li><a id="casilla_35"> </a></li>
+		<li><a id="casilla_36"> </a></li>
+		<li><a id="casilla_37"> </a></li>
+		<li><a id="casilla_38"> </a></li>
+		<li><a id="casilla_39"> </a></li>
+	</ul>
+
+	<ul>
+		<li><a id="casilla_40"> </a></li>
+		<li><a id="casilla_41"> </a></li>
+		<li><a id="casilla_42"> </a></li>
+		<li><a id="casilla_43"> </a></li>
+		<li><a id="casilla_44"> </a></li>
+		<li><a id="casilla_45"> </a></li>
+		<li><a id="casilla_46"> </a></li>
+		<li><a id="casilla_47"> </a></li>
+	</ul>
+
+	<ul>
+		<li><a id="casilla_48"> </a></li>
+		<li><a id="casilla_49"> </a></li>
+		<li><a id="casilla_50"> </a></li>
+		<li><a id="casilla_51"> </a></li>
+		<li><a id="casilla_52"> </a></li>
+		<li><a id="casilla_53"> </a></li>
+		<li><a id="casilla_54"> </a></li>
+		<li><a id="casilla_55"> </a></li>
+	</ul>
+
+	<ul>
+		<li><a id="casilla_56"> </a></li>
+		<li><a id="casilla_57"> </a></li>
+		<li><a id="casilla_58"> </a></li>
+		<li><a id="casilla_59"> </a></li>
+		<li><a id="casilla_60"> </a></li>
+		<li><a id="casilla_61"> </a></li>
+		<li><a id="casilla_62"> </a></li>
+		<li><a id="casilla_63"> </a></li>
+	</ul>
+
+</div>
+
+<p></p><p></p>
+<div><span>TURNO</span> <div class="turno"><a id="turno" class="negra" > </a></div>    <div id="calculando"  >Calculando....Espere por favor</div></div>
+<p></p><p></p>
+<div><span>Negras:</span> <span id="cont_Negras">2</span> </div>
+<div><span>Blancas:</span> <span id="cont_Blancas">2</span> </div>
+<p></p><p></p>
+<div><span>Selecciona el Algoritmo: </span> <select id="algoritmo" /></div>
+
+<div > <input id="vsHumano" type="button" value=" vs Humano" />
+	   <input id="vsIA" type="button" value=" vs IA" />
+</div>
+
+</div>
+
+
+
+		
+		
+		
+		
+		
+		
